@@ -28,7 +28,7 @@
 #define ACTIVE_STR "2"
 
 #ifndef US_KEYBOARD_LAYOUT
-#define US_KEYBOARD_LAYOUT @"com.apple.keylayout.US"
+#define US_KEYBOARD_LAYOUT @"com.apple.keylayout.ABC"
 #endif
 
 #ifndef CHINESE_KEYBOARD_LAYOUT
@@ -168,6 +168,7 @@ int main(int argc, const char *argv[]) {
                 printf("%s\n", get_current_imname().UTF8String);
             }
         } else {
+            NSLog(@"current IME: %@", get_current_imname());
             print_status(get_status());
         }
 
