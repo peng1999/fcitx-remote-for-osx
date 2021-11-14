@@ -168,7 +168,6 @@ int main(int argc, const char *argv[]) {
                 printf("%s\n", get_current_imname().UTF8String);
             }
         } else {
-            NSLog(@"current IME: %@", get_current_imname());
             print_status(get_status());
         }
 
