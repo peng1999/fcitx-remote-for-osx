@@ -28,7 +28,7 @@
 #define ACTIVE_STR "2"
 
 #ifndef US_KEYBOARD_LAYOUT
-#define US_KEYBOARD_LAYOUT @"com.apple.keylayout.ABC"
+#define US_KEYBOARD_LAYOUT @"com.apple.keylayout.US"
 #endif
 
 #ifndef CHINESE_KEYBOARD_LAYOUT
@@ -92,7 +92,6 @@ void switch_to(NSString* imId){
             if ([name isEqualTo: imId]) {
                 TISInputSourceRef inputSource = (__bridge TISInputSourceRef)filteredArray[index];
                 NSString *name = (__bridge NSString*)TISGetInputSourceProperty(inputSource, kTISPropertyInputSourceID);
-                NSLog(@"Changing to %@", name);
                 TISSelectInputSource((__bridge TISInputSourceRef)filteredArray[index]);
             }
             index++;

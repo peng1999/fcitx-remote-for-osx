@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #  This file is part of fcitx-remote-for-osx
 #  Copyright (c) 2017 fcitx-remote-for-osx's authors
 #  This program is free software: you can redistribute it and/or modify
